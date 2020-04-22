@@ -1,0 +1,24 @@
+package org.edu.clinica.run;
+
+import org.edu.clinica.util.HibernateUtil;
+import org.hibernate.Session;
+
+
+public class Iniciar {
+
+	public static void main(String[] args) {
+
+					
+
+					
+					
+					
+					Session session = HibernateUtil.getSessionFactory().openSession();
+					session.beginTransaction();
+					session.save(null);
+					session.getTransaction().commit();
+					HibernateUtil.shutdown();
+
+	}
+
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.4+/home/emerson/eclipse-work/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2995560520.index
+2901542843.index
+3703194086.index

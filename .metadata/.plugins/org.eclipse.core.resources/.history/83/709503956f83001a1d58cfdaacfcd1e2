@@ -1,0 +1,74 @@
+<!DOCTYPE hibernate-configuration SYSTEM "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+		<!-- Settings for a HSQL database.
+        <property name="dialect">org.hibernate.dialect.HSQLDialect</property>
+        <property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
+        <property name="connection.url">jdbc:hsqldb:hsql://localhost</property>
+        <property name="connection.username">sa</property>
+        <property name="connection.password"></property>
+        -->
+
+        <!-- Settings for a local PostgreSQL database.-->
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="query.substitutions">yes 'Y', no 'N'</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost/projectweb</property>
+        <property name="connection.username">pg</property>
+        <property name="connection.password">root</property>
+        
+
+        <!--         
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property> 
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/Aluno</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        -->   
+     
+
+        <!-- Settings for an Oracle9/10g database.
+        <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
+        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="connection.url">jdbc:oracle:thin:@localhost:1521:ORAC9</property>
+        <property name="connection.username">test</property>
+        <property name="connection.password">test</property>
+        -->
+
+        <!-- Use the C3P0 connection pool.
+        <property name="c3p0.min_size">3</property>
+        <property name="c3p0.max_size">5</property>
+        <property name="c3p0.timeout">1800</property>
+        -->
+
+        <!-- Use the Hibernate built-in pool for tests. -->
+        <property name="connection.pool_size">3</property>
+
+        <!-- Enable auto-commit mode for special cases (integration testing) -->
+        <property name="connection.autocommit">true</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <property name="cache.use_query_cache">false</property>
+        <property name="cache.use_minimal_puts">false</property>
+
+        <!-- In eager fetching, only join three tables deep if joins are used -->
+        <property name="max_fetch_depth">3</property>
+
+        <!-- Print SQL to stdout, format it nicely  -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="use_sql_comments">true</property>
+
+        <!-- Drop and then re-create schema on SessionFactory build, for testing  -->
+        <property name="hbm2ddl.auto">create</property>
+
+        <!-- Use thread-bound persistence context propagation, scoped to the transaction -->
+        <property name="current_session_context_class">thread</property>
+
+        <mapping class="org.edu.clinica.run.Clinica"/>
+
+    </session-factory>
+
+</hibernate-configuration>

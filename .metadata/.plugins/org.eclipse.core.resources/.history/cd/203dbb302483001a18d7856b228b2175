@@ -1,0 +1,23 @@
+package org.edu.clinica.run;
+
+import org.edu.clinica.util.HibernateUtil;
+import org.edu.cl.classic.Session;
+
+public class Clinica {
+
+	public static void main(String[] args) {
+			System.out.print("ok");
+			
+			
+			
+			
+			
+			Session session = HibernateUtil.getSessionFactory().openSession();
+			session.beginTransaction();
+			session.save(a);
+			session.getTransaction().commit();
+			HibernateUtil.shutdown();
+	}
+
+}
+	

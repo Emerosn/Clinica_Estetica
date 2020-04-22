@@ -1,0 +1,10 @@
+127.0.0.1 - - [19/Apr/2020:23:36:50 -0300] "GET / HTTP/1.1" 404 709
+127.0.0.1 - - [19/Apr/2020:23:37:42 -0300] "GET / HTTP/1.1" 404 709
+127.0.0.1 - - [19/Apr/2020:23:37:47 -0300] "GET / HTTP/1.1" 404 709
+127.0.0.1 - - [19/Apr/2020:23:38:02 -0300] "GET /ClinicaEstetica/Index.xhtml HTTP/1.1" 200 347
+127.0.0.1 - - [19/Apr/2020:23:38:21 -0300] "GET /ClinicaEstetica/Index.xhtml HTTP/1.1" 304 -
+127.0.0.1 - - [19/Apr/2020:23:40:10 -0300] "GET /ClinicaEstetica/Index.xhtml HTTP/1.1" 200 478
+127.0.0.1 - - [19/Apr/2020:23:58:48 -0300] "GET / HTTP/1.1" 404 709
+127.0.0.1 - - [19/Apr/2020:23:59:10 -0300] "GET /Clinica_Estetica/Index.xhtml HTTP/1.1" 404 741
+127.0.0.1 - - [19/Apr/2020:23:59:10 -0300] "GET /favicon.ico HTTP/1.1" 404 720
+127.0.0.1 - - [19/Apr/2020:23:59:52 -0300] "GET /Clinica_Estetica/Index.xhtml HTTP/1.1" 404 741
